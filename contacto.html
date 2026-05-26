@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="media.css"/>
+  <link rel="icon" type="image/x-icon" href="imagenes/huellas4.png" /> 
+  <title>Contacto | Proyecto Huellitas</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-color:#fffaf3;
+      color:#333;
+    }
+
+    header{
+      background-color:#ff914d;
+      color:white;
+      padding:25px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:30px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .hero{
+      height:350px;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url("imagenes/animal17.jpeg");
+
+      background-size:80%;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      text-align:center;
+      color:white;
+      padding:40px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+    }
+
+    section{
+      padding:70px 50px;
+    }
+
+    .titulo{
+      text-align:center;
+      color:#ff914d;
+      font-size:38px;
+      margin-bottom:25px;
+    }
+
+    .descripcion{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      font-size:18px;
+      line-height:1.8;
+      margin-bottom:50px;
+    }
+
+    .contenedor{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .info{
+      background:white;
+      width:350px;
+      padding:35px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    .info h3{
+      color:#ff914d;
+      margin-bottom:20px;
+      font-size:28px;
+    }
+
+    .info p{
+      margin-bottom:15px;
+      font-size:17px;
+    }
+
+    form{
+      background:white;
+      width:450px;
+      padding:35px;
+      border-radius:18px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    form h3{
+      color:#ff914d;
+      margin-bottom:20px;
+      font-size:28px;
+      text-align:center;
+    }
+
+    input,
+    textarea{
+      width:100%;
+      padding:14px;
+      margin-bottom:18px;
+      border:1px solid #ccc;
+      border-radius:10px;
+      font-size:16px;
+    }
+
+    textarea{
+      resize:none;
+      height:140px;
+    }
+
+    button{
+      width:100%;
+      padding:14px;
+      border:none;
+      background:#ff914d;
+      color:white;
+      font-size:17px;
+      border-radius:30px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    button:hover{
+      background:#e97830;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:18px;
+      font-size:14px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+      }
+
+      nav a{
+        display:inline-block;
+        margin:8px;
+      }
+
+      .hero h2{
+        font-size:36px;
+      }
+
+      section{
+        padding:50px 25px;
+      }
+
+      form,
+      .info{
+        width:100%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <h1>🐾 Proyecto Huellitas</h1>
+
+    <nav>
+      <a href="link.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="acciones.html">Acciones</a>
+      <a href="comoayudar.html">Cómo ayudar</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+
+    <div>
+      <h2>Contacto</h2>
+      <p>Estamos para ayudar a quienes más lo necesitan</p>
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="titulo">Comunicate con nosotros</h2>
+
+    <p class="descripcion">
+      Si querés adoptar, ayudar, realizar una donación
+      o informar sobre un animal que necesite asistencia,
+      podés comunicarte con nuestro equipo.
+    </p>
+
+    <div class="contenedor">
+
+      <div class="info">
+
+        <h3>📍 Información</h3>
+
+        <p><strong>Dirección:</strong> Buenos Aires, Argentina</p>
+
+        <p><strong>Email:</strong> proyectohuellitas@gmail.com</p>
+
+        <p><strong>Instagram:</strong> @proyectohuellitas</p>
+
+        <p><strong>Teléfono:</strong> +54 11 1234-5678</p>
+
+        <p><strong>Horarios:</strong> Lunes a Viernes de 9hs a 18hs</p>
+
+      </div>
+
+      <form>
+
+        <h3>✉️ Enviar mensaje</h3>
+
+        <input type="text" placeholder="Nombre completo" required>
+
+        <input type="email" placeholder="Correo electrónico" required>
+
+        <textarea placeholder="Escribí tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Proyecto Huellitas | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
